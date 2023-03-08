@@ -6,11 +6,7 @@
 # In this assignment, you shall write a function that will test if a 4×4 matrix is singular, i.e. to determine if an inverse exists, before calculating it.
 # 
 # You shall use the method of converting a matrix to echelon form, and testing if this fails by leaving zeros that can’t be removed on the leading diagonal.
-# 
-# Don't worry if you've not coded before, a framework for the function has already been written.
-# Look through the code, and you'll be instructed where to make changes.
-# We'll do the first two rows, and you can use this as a guide to do the last two.
-# 
+
 # ### Matrices in Python
 # In the *numpy* package in Python, matrices are indexed using zero for the top-most column and left-most row.
 # I.e., the matrix structure looks like this:
@@ -31,18 +27,8 @@
 # ```
 # Which you will see will be useful when calculating linear combinations of rows.
 # 
-# A final note - Python is sensitive to indentation.
-# All the code you should complete will be at the same level of indentation as the instruction comment.
-# 
-# ### How to submit
-# Edit the code in the cell below to complete the assignment.
-# Once you are finished and happy with it, press the *Submit Assignment* button at the top of this notebook.
-# 
-# Please don't change any of the function names, as these will be checked by the grading script.
-# 
-# If you have further questions about submissions or programming assignments, here is a [list](https://www.coursera.org/learn/linear-algebra-machine-learning/discussions/weeks/1/threads/jB4klkn5EeibtBIQyzFmQg) of Q&A. You can also raise an issue on the discussion forum. Good luck!
 
-# In[3]:
+
 
 
 # GRADED FUNCTION
@@ -52,7 +38,7 @@ import numpy as np
 # If at any point it fails because it can't put a 1 in the leading diagonal,
 # we will return the value True, otherwise, we will return False.
 # There is no need to edit this function.
-def isSingular(A) :
+def isSingularMat(A) :
     B = np.array(A, dtype=np.float_) # Make B as a copy of A, since we're going to alter it's values.
     try:
         fixRowZero(B)
@@ -162,7 +148,7 @@ A = np.array([
         [0, 0, 4, 4],
         [0, 0, 5, 5]
     ], dtype=np.float_)
-isSingular(A)
+isSingularMat(A)
 
 
 # In[5]:
