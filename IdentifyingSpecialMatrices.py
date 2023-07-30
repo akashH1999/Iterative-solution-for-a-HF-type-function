@@ -31,7 +31,7 @@
 
 
 
-# GRADED FUNCTION --This functionality will be graded for the final assessment
+# GRADED FUNCTION 
 import numpy as np
 
 # Our function will go through the matrix replacing each row in order turning it into echelon form.
