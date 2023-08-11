@@ -24,7 +24,8 @@
 # Before we begin, let's load the libraries.
 get_ipython().magic('pylab notebook')
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
+import pandas as pd
 import ase 
 import numpy.linalg as la
 from readonly.PageRankFunctions import *
