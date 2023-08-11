@@ -26,6 +26,7 @@ get_ipython().magic('pylab notebook')
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from ase.io import read, write
 import ase 
 import numpy.linalg as la
 from readonly.PageRankFunctions import *
